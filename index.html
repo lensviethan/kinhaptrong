@@ -205,3 +205,253 @@
 </body>
 
 </html>
+
+
+
+<!-- MENU EYEMEDI --> <div class="eyemedi-menu"> <button class="menu-btn" onclick="toggleMenu()">☰</button> <div id="dropdownMenu" class="menu-content"> 
+    <a href="https://eyemedi.vn/">Trang chủ</a>
+    <a href="https://eyemedi.vn/kinh-ap-trong-can.html">Kính áp tròng cận thị</a> 
+    <a href="https://eyemedi.vn/lens-can-loan.html">Kính áp tròng loạn thị</a> 
+	<a href="https://eyemedi.vn/lens-tham-my.html">Kính áp tròng che khuyết điểm</a> 
+    <a href="https://eyemedi.vn/nuoc-ngam-kinh-ap-trong.html">Nước ngâm bảo quản Lens</a> 
+    <a href="https://eyemedi.vn/nuoc-nho-mat-kinh-ap-trong.html">Nước nhỏ mắt dưỡng ẩm Lens</a> 
+    <a href="https://eyemedi.vn/khay-bao-quan-kinh-ap-trong.html">Khay bảo quản Contact Lens</a> 
+     <a href="https://eyemedi.vn/Bảng giá sỉ & Chính sách đại lý.html">Chính sách đại lý</a> 
+    <a href="https://eyemedi.vn/Chính sách đại lý nhượng quyền.html">Đại lý nhượng quyền</a>
+    <a href="https://eyemedi.vn/he-thong-ban-le.html">Hệ thống bán lẻ Qeye Lens</a> 
+    <a href="https://eyemedi.vn/dia-chi-do-mat.html">Địa chỉ đo mắt miễn phí</a>
+	</div> </div> 
+<style> .eyemedi-menu{ position:fixed; top:10px; left:3px; z-index:9999; } .menu-btn{ background:#7fc8ff; color:#fff; border:none; padding:12px 16px; font-size:24px; border-radius:8px; cursor:pointer; box-shadow:0 3px 10px rgba(0,0,0,0.2); } .menu-content{ display:none; margin-top:8px; min-width:220px; background:#ffffff; border-radius:10px; overflow:hidden; box-shadow:0 5px 20px rgba(0,0,0,0.15); } .menu-content a{ display:block; padding:12px 15px; text-decoration:none; color:#333; border-bottom:1px solid #f1f1f1; font-family:Arial, sans-serif; transition:0.3s; } .menu-content a:hover{ background:#EAF6FF; color:#0A6EB4; } .show{ display:block; } </style> <script> function toggleMenu() { document.getElementById("dropdownMenu") .classList.toggle("show"); } // Click ngoài menu sẽ tự đóng window.onclick = function(event) { if (!event.target.matches('.menu-btn')) { var dropdown = document.getElementById("dropdownMenu"); if (dropdown.classList.contains('show')) { dropdown.classList.remove('show'); } } } </script>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="landing-title">https://kinhaptrong.com.vn/cua-hang-phan-phoi-ban-le-kinh-ap-trong-can-loan-chinh-hang-uy-tin-nhat-hien-nay/</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: linear-gradient(90deg, #7fc8ff 0%, #ffffff 100%);
+            min-height: 100vh;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 2rem;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.10);
+            backdrop-filter: blur(4px);
+        }
+
+        .hotline-btn {
+            background: linear-gradient(90deg, #ffb7eb 0%, #7fc8ff 100%);
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border-radius: 2rem;
+            box-shadow: 0 4px 24px rgba(226, 79, 169, .15);
+        }
+
+        .hotline-btn svg {
+            margin-right: 4px;
+        }
+
+        .jas-sale-pop {
+            display: none;
+            position: fixed;
+            bottom: 1.5rem;
+            left: 1.5rem;
+            z-index: 9999;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 1rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            max-width: 320px;
+            padding: 1rem;
+            font-size: 14px;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .jas-sale-pop.slideUp {
+            animation: slideUp 0.6s ease forwards;
+        }
+
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .jas-sale-pop img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+        }
+
+        .jas-sale-pop-content {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 0.75rem;
+            max-width: 200px;
+        }
+
+        .pe-7s-close {
+            cursor: pointer;
+            position: absolute;
+            top: 6px;
+            right: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #999;
+        }
+    </style>
+
+	<!-- ================= Popup Khuyến Mại ================= -->
+
+<style>
+#promo-popup{
+    position:fixed;
+    right:20px;
+    bottom:-100px;
+    width:520px;
+    height:60px;             /* khoảng 1.5cm */
+    background:linear-gradient(90deg, #7fc8ff 0%, #ffffff 100%);
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 15px;
+    box-sizing:border-box;
+    z-index:999999;
+    font-family:Arial,Helvetica,sans-serif;
+    box-shadow:0 8px 25px rgba(0,0,0,.35);
+
+    animation:
+        slideUp .8s ease forwards,
+        glow .8s infinite,
+        shake 2s infinite;
+}
+
+#promo-popup .text{
+    color:#ff3131;
+    font-size:18px;
+    font-weight:700;
+    white-space:nowrap;
+    animation:blink .8s infinite;
+}
+
+#promo-popup .btn-buy{
+    background:#FFD700;
+    color:#d90000;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:15px;
+    padding:8px 18px;
+    border-radius:30px;
+    transition:.3s;
+    animation:pulse .9s infinite;
+}
+
+#promo-popup .btn-buy:hover{
+    transform:scale(1.08);
+}
+
+#promo-popup .close{
+    color:#fff;
+    cursor:pointer;
+    font-size:22px;
+    margin-left:12px;
+    font-weight:bold;
+}
+
+@keyframes slideUp{
+    from{
+        bottom:-100px;
+        opacity:0;
+    }
+    to{
+        bottom:20px;
+        opacity:1;
+    }
+}
+
+@keyframes pulse{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.08);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+@keyframes blink{
+    50%{
+        opacity:.45;
+    }
+}
+
+@keyframes glow{
+    50%{
+        box-shadow:
+        0 0 12px #FFD700,
+        0 0 25px #FFD700;
+    }
+}
+
+@keyframes shake{
+    0%,100%{
+        transform:translateX(0);
+    }
+    25%{
+        transform:translateX(-2px);
+    }
+    75%{
+        transform:translateX(2px);
+    }
+}
+
+@media(max-width:768px){
+
+#promo-popup{
+    width:95%;
+    left:2.5%;
+    right:auto;
+}
+
+#promo-popup .text{
+    font-size:15px;
+}
+
+#promo-popup .btn-buy{
+    padding:7px 14px;
+    font-size:13px;
+}
+
+}
+</style>
+
+<div id="promo-popup">
+
+<div class="text">
+🔥THU GỌNG KÍNH CŨ 500k
+</div>
+
+<a class="btn-buy"
+href="https://zalo.me/0967190005"
+target="_blank">
+INBOX
+</a>
+
+<div class="close"
+onclick="document.getElementById('promo-popup').style.display='none'">
+×
+</div>
+
+</div>
