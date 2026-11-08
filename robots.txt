@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /404.html
-Disallow: /googlecb392ec10e54f69d.html
 
 Sitemap: https://kinhaptrong.com.vn/sitemap.xml
