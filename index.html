@@ -312,14 +312,14 @@ var TILE=[["mau","kinh-ap-trong-milky-gray"],["trong","kinh-ap-trong-clear-lens-
 $("#tiles").innerHTML=TILE.map(function(t){var c=CATS.filter(function(x){return x[0]===t[0]})[0],p=byId[t[1]];return '<a class="tile" href="#san-pham" data-tab="'+c[0]+'">'+(p&&p.img?'<img src="'+p.img+'" alt="" loading="lazy">':'')+'<div><b>'+esc(c[1])+'</b><span>'+esc(c[2])+'</span></div></a>'}).join("");
 
 /* products */
-var tab="mau",shown=8;
+var tab="mau",shown=4;
 $("#tabs").innerHTML=CATS.map(function(c){return '<button role="tab" data-t="'+c[0]+'">'+esc(c[1])+'</button>'}).join("");
 function render(){var L=P.filter(function(p){return p.c===tab});
  [].forEach.call($("#tabs").children,function(b){var on=b.dataset.t===tab;b.classList.toggle("on",on);b.setAttribute("aria-selected",on)});
  $("#grid").innerHTML=L.slice(0,shown).map(function(p){var pr=p.pr.split(" / ");return '<article class="card"><div class="im">'+img(p)+'</div><div class="bd"><span class="tg">'+esc(p.tg)+'</span><h3>'+esc(p.n)+'</h3><span class="sp">'+esc(p.sp)+'</span><span class="pr"><span>Sỉ / SL</span><a class="zl" href="'+ZALO+'" target="_blank" rel="noopener" aria-label="Hỏi giá sỉ '+esc(p.n)+' qua Zalo" title="Hỏi giá sỉ qua Zalo">Zalo</a></span></div></article>'}).join("");
  var m=$("#moreBtn");m.hidden=L.length<=shown;m.textContent="Xem thêm "+(L.length-shown)+" sản phẩm"}
-$("#tabs").addEventListener("click",function(e){var b=e.target.closest("button");if(b){tab=b.dataset.t;shown=8;render()}});
-$("#moreBtn").onclick=function(){shown+=8;render()};
+$("#tabs").addEventListener("click",function(e){var b=e.target.closest("button");if(b){tab=b.dataset.t;shown=4;render()}});
+$("#moreBtn").onclick=function(){shown+=4;render()};
 render();
 
 /* stores */
@@ -336,8 +336,8 @@ addEventListener("keydown",function(e){if(e.key==="Escape")closeBuy()});
 
 /* global clicks: data-buy, data-tab */
 document.addEventListener("click",function(e){var b=e.target.closest("[data-buy]");if(b){e.preventDefault();openBuy(b.dataset.buy);return}
- var t=e.target.closest("[data-tab]");if(t&&t.parentNode.id!=="tabs"){tab=t.dataset.tab;shown=8;render();if(t.closest(".qs")){e.preventDefault();history.replaceState(null,"","#tab-"+tab);document.getElementById("san-pham").scrollIntoView({behavior:"smooth"})}}});
-function hashTab(){var m=location.hash.match(/^#tab-([a-z]+)$/);if(m&&CATS.some(function(c){return c[0]===m[1]})){tab=m[1];shown=8;render();setTimeout(function(){document.getElementById("san-pham").scrollIntoView()},60)}}hashTab();addEventListener("hashchange",hashTab);
+ var t=e.target.closest("[data-tab]");if(t&&t.parentNode.id!=="tabs"){tab=t.dataset.tab;shown=4;render();if(t.closest(".qs")){e.preventDefault();history.replaceState(null,"","#tab-"+tab);document.getElementById("san-pham").scrollIntoView({behavior:"smooth"})}}});
+function hashTab(){var m=location.hash.match(/^#tab-([a-z]+)$/);if(m&&CATS.some(function(c){return c[0]===m[1]})){tab=m[1];shown=4;render();setTimeout(function(){document.getElementById("san-pham").scrollIntoView()},60)}}hashTab();addEventListener("hashchange",hashTab);
 
 /* ads strip */
 (function(){var tr=document.getElementById("adsTr");if(!tr)return;var n=tr.children.length,i=0,box=tr.parentNode;function v(){return innerWidth<=600?2:4}
