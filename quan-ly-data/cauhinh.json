@@ -1,0 +1,33 @@
+{
+ "v": 1,
+ "repo": {
+  "owner": "lensviethan",
+  "name": "kinhaptrong",
+  "branch": "main"
+ },
+ "site": "https://kinhaptrong.com.vn/",
+ "siteName": "https://kinhaptrong.com.vn/top",
+ "token": {
+  "iv": "5Artz6k/33DHKJNp",
+  "ct": "cXuWK+iFXVSUMmtOsbaaWKUn3EvPYUwF0cFvaTZqJQWf6ffYIwWwqp71Q5Wfw76nAv0OxbjncmHB809dDIYm+6yvI1iHbIFenTLsUCBD/oMJRVjbZtEmfaUhsvqpnsZ951QrOIuQPyTDjCwSUQ=="
+ },
+ "lock": {
+  "salt": "g3/My85rjHiDx2eyr+RsGg==",
+  "iv": "4wqm8pSSENv+M4m+",
+  "ct": "Lp0uemPfYzmvDID5DGG/V5DN"
+ },
+ "users": [
+  {
+   "u": "admin",
+   "name": "Mắt Việt Hàn",
+   "role": "admin",
+   "active": true,
+   "salt": "MC7Sbo4VIY/mD5o8v4L5/g==",
+   "iv": "JLpXmyYtbVEStjbT",
+   "ct": "8qxP+N8MyY56aoSmJ+5hFD6GB/SDGdcz2Pg/w/BdR9bQrI0oogOpJAQnL35n2x9q"
+  }
+ ],
+ "locks": {},
+ "kw": {},
+ "created": "2026-11-08T22:15:13+07:00"
+}
