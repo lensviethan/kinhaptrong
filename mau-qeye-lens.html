@@ -119,7 +119,9 @@ nav.mainnav .dd a:hover{background:var(--mist);color:var(--sea)}
 .card .sp{font-size:13px;color:var(--mute)}
 .card .pr{font-weight:800;color:var(--coral);margin-top:auto;padding-top:6px}
 .card .pr small{font-weight:500;color:var(--mute)}
-.card .btn{margin-top:10px;min-height:40px;font-size:14px;padding:8px 12px}
+.card .pr{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.zl{flex:none;display:inline-flex;align-items:center;justify-content:center;height:30px;padding:0 10px;border-radius:999px;background:#0068ff;color:#fff!important;font:800 12px/1 inherit;text-decoration:none;letter-spacing:.02em}
+.zl:hover{background:#0050c8}
 .more{text-align:center;margin-top:24px}
 
 /* about */
@@ -135,12 +137,12 @@ nav.mainnav .dd a:hover{background:var(--mist);color:var(--sea)}
 @media(max-width:860px){.about{grid-template-columns:1fr}}
 
 /* stores */
-.stores{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.store{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:8px}
-.store .pin{width:44px;height:44px;border-radius:12px;background:var(--blush);color:var(--coral);display:grid;place-items:center;font-size:20px}
-.store h3{margin:6px 0 0;font-size:19px}.store p{margin:0;color:var(--mute);font-size:15px}
-.store .btn{margin-top:auto;align-self:flex-start}
-@media(max-width:860px){.stores{grid-template-columns:1fr}}
+.stores{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+.store{display:flex;align-items:center;gap:14px;padding:16px 4px;border-bottom:1px solid #f3cdd5}
+.store .pin{flex:none;width:40px;height:40px;border-radius:50%;background:#fff;color:var(--coral);display:grid;place-items:center;font-size:18px}
+.store .tx{flex:1;min-width:0}.store h3{margin:0;font-size:17px}.store p{margin:2px 0 0;color:var(--mute);font-size:14px}
+.store a.go{flex:none;color:var(--sea);font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap}.store a.go:hover{color:var(--coral)}
+@media(max-width:760px){.stores{grid-template-columns:1fr}}
 
 /* knowledge + facebook */
 .kb{display:grid;grid-template-columns:1.3fr .7fr;gap:32px;align-items:start}
@@ -234,7 +236,7 @@ footer .logo span{color:#fff}footer .logo small{color:#c9d6de}
 </div></section>
 
 <section class="sec alt" id="san-pham"><div class="w">
-  <div class="sh"><span class="ey">Sản phẩm</span><h2>Bộ sưu tập Qeye Lens</h2><p>Bấm "Mua ngay" để chọn cửa hàng gần bạn và đặt hàng.</p></div>
+  <div class="sh"><span class="ey">Sản phẩm</span><h2>Bộ sưu tập Qeye Lens</h2><p>Giá sỉ theo số lượng. Bấm Zalo để nhận báo giá.</p></div>
   <div class="tabs" id="tabs" role="tablist"></div>
   <div class="grid" id="grid"></div>
   <div class="more"><button class="btn o" id="moreBtn" hidden>Xem thêm sản phẩm</button></div>
@@ -244,7 +246,7 @@ footer .logo span{color:#fff}footer .logo small{color:#c9d6de}
   <div>
     <span class="sh" style="display:block;text-align:left;margin:0"><span class="ey">Về chúng tôi</span></span>
     <h2>Qeye Lens – kính áp tròng quốc dân của người Việt</h2>
-    <p>Công ty TNHH Mắt Hàn Việt định hướng phát triển Qeye Lens trở thành thương hiệu kính áp tròng uy tín tại Việt Nam, mang đến các sản phẩm contact lens chất lượng từ Hàn Quốc với mức giá hợp lý, giúp người dùng dễ dàng tiếp cận giải pháp chăm sóc mắt an toàn và hiện đại.</p>
+    <p>Qeye Lens định hướng trở thành thương hiệu kính áp tròng uy tín tại Việt Nam, mang đến các sản phẩm contact lens chất lượng từ Hàn Quốc với mức giá hợp lý, giúp người dùng dễ dàng tiếp cận giải pháp chăm sóc mắt an toàn và hiện đại.</p>
     <ul>
       <li>Nhập khẩu và phân phối contact lens Hàn Quốc từ năm 2007</li>
       <li>Phân phối theo mô hình B2B kết hợp B2C, mạng lưới đối tác toàn quốc</li>
@@ -262,7 +264,7 @@ footer .logo span{color:#fff}footer .logo small{color:#c9d6de}
 
 <section class="sec pink" id="he-thong"><div class="w">
   <div class="sh"><span class="ey">Mua hàng</span><h2>Hệ thống cửa hàng Qeye Lens</h2><p>Chọn cửa hàng gần bạn để đặt hàng online và được giao nhanh.</p></div>
-  <div class="stores" id="stores"></div>
+  <ul class="stores" id="stores"></ul>
   <div class="more"><a class="btn o" href="kinh-ap-trong-mat-viet-han-tim-cua-hang.html">Xem tất cả đại lý toàn quốc</a></div>
 </div></section>
 
@@ -281,7 +283,7 @@ footer .logo span{color:#fff}footer .logo small{color:#c9d6de}
   <div class="fcols">
     <div class="fco">
       <a class="logo" href="#top"><span>QEYE LENS</span><small>authentic contact lenses</small></a>
-      <p><strong style="color:#fff">Công ty TNHH Mắt Hàn Việt</strong><br>Nhập khẩu và phân phối kính áp tròng Hàn Quốc<br>Địa chỉ: <span class="fill">[cập nhật địa chỉ]</span><br>Mã số thuế: <span class="fill">[cập nhật MST]</span><br>Hotline: <span class="fill">[cập nhật hotline]</span> · Email: <span class="fill">[cập nhật email]</span></p>
+      <p><strong style="color:#fff">Phân phối sỉ Lens Hàn Quốc tại Việt Nam</strong><br>Hotline / Zalo: <a href="https://zalo.me/0906629366" target="_blank" rel="noopener">0906 629 366</a><br>Địa chỉ: <span class="fill">[cập nhật địa chỉ]</span><br>Email: <span class="fill">[cập nhật email]</span></p>
     </div>
     <div><h4>Chính sách</h4><ul><li><a href="chinh-sach-dai-ly.html">Chính sách đại lý</a></li><li><a href="#kien-thuc">Hướng dẫn sử dụng lens</a></li><li><span class="fill">[Chính sách bảo hành]</span></li><li><span class="fill">[Đổi trả, hoàn tiền]</span></li><li><span class="fill">[Bảo mật thông tin]</span></li></ul></div>
     <div><h4>Sản phẩm</h4><ul><li><a href="#san-pham" data-tab="mau">Lens màu</a></li><li><a href="#san-pham" data-tab="trong">Lens trong suốt</a></li><li><a href="#san-pham" data-tab="loan">Lens cận loạn</a></li><li><a href="#san-pham" data-tab="ngam">Nước ngâm, nhỏ mắt</a></li><li><a href="#san-pham" data-tab="phukien">Hộp và phụ kiện</a></li></ul></div>
@@ -301,6 +303,7 @@ footer .logo span{color:#fff}footer .logo small{color:#c9d6de}
 
 <script>
 var P=[{"id": "kinh-ap-trong-pc-brown", "c": "mau", "img": "images/san-pham/51648564070e.webp", "tg": "HIGH QUALITY", "n": "PC Brown", "sp": "DIA 14.5mm", "pr": "300.000đ / cặp"}, {"id": "kinh-ap-trong-pc-gray", "c": "mau", "img": "images/san-pham/d7533bca6f04.webp", "tg": "HIGH QUALITY", "n": "PC Gray", "sp": "DIA 14.5mm", "pr": "300.000đ / cặp"}, {"id": "kinh-ap-trong-pc-green", "c": "mau", "img": "images/san-pham/ad7d75cb96ec.webp", "tg": "HIGH QUALITY", "n": "PC Green", "sp": "DIA 14.5mm", "pr": "300.000đ / cặp"}, {"id": "kinh-ap-trong-pc-blue", "c": "mau", "img": "images/san-pham/54415940572f.webp", "tg": "HIGH QUALITY", "n": "PC Blue", "sp": "DIA 14.5mm", "pr": "300.000đ / cặp"}, {"id": "kinh-ap-trong-pc-violet", "c": "mau", "img": "images/san-pham/8db38065a399.webp", "tg": "HIGH QUALITY", "n": "PC Violet", "sp": "DIA 14.5mm", "pr": "300.000đ / cặp"}, {"id": "kinh-ap-trong-bt01-black", "c": "mau", "img": "images/san-pham/f11f535a6b02.webp", "tg": "HIGH QUALITY", "n": "BT01 Black", "sp": "DIA 14.5mm", "pr": "300.000đ / cặp"}, {"id": "kinh-ap-trong-fay-brown", "c": "mau", "img": "images/san-pham/fa0106977355.webp", "tg": "HIGH QUALITY", "n": "Fay Brown", "sp": "DIA 14.5mm", "pr": "300.000đ / cặp"}, {"id": "kinh-ap-trong-fay-gray", "c": "mau", "img": "images/san-pham/3b21ed586cb4.webp", "tg": "HIGH QUALITY", "n": "Fay Gray", "sp": "DIA 14.5mm", "pr": "300.000đ / cặp"}, {"id": "kinh-ap-trong-rainshower-blue", "c": "mau", "img": "images/san-pham/b87c6563307f.webp", "tg": "HIGH QUALITY", "n": "Rainshower Blue", "sp": "DIA 14.8mm", "pr": "300.000đ / cặp"}, {"id": "kinh-ap-trong-rainshower-brown", "c": "mau", "img": "images/san-pham/e1cf2a0d5b3a.webp", "tg": "HIGH QUALITY", "n": "Rainshower Brown", "sp": "DIA 14.8mm", "pr": "300.000đ / cặp"}, {"id": "kinh-ap-trong-w223-brown", "c": "mau", "img": "images/san-pham/839eff2722a2.webp", "tg": "BASIC LENS", "n": "W223 Brown", "sp": "DIA 14.8mm", "pr": "300.000đ / cặp"}, {"id": "kinh-ap-trong-w223-gray", "c": "mau", "img": "", "tg": "BASIC LENS", "n": "W223 Gray", "sp": "DIA 14.8mm", "pr": "300.000đ / cặp"}, {"id": "kinh-ap-trong-dark-brown", "c": "mau", "img": "images/san-pham/5d6eea5c7eb1.webp", "tg": "BASIC LENS", "n": "Dark Brown", "sp": "DIA 14.8mm", "pr": "300.000đ / cặp"}, {"id": "kinh-ap-trong-wbk-black", "c": "mau", "img": "images/san-pham/fffdd21436d3.webp", "tg": "BASIC LENS", "n": "WBK Black", "sp": "DIA 14.8mm", "pr": "300.000đ / cặp"}, {"id": "kinh-ap-trong-glam-brown", "c": "mau", "img": "images/san-pham/e925bbf50a92.webp", "tg": "LUXURY LENS", "n": "Glam Brown", "sp": "DIA 14.0mm", "pr": "300.000đ / cặp"}, {"id": "kinh-ap-trong-glam-gray", "c": "mau", "img": "images/san-pham/dc0f48fcdd2d.webp", "tg": "LUXURY LENS", "n": "Glam Gray", "sp": "DIA 14.0mm", "pr": "300.000đ / cặp"}, {"id": "kinh-ap-trong-milky-brown", "c": "mau", "img": "images/san-pham/150a90a57f19.webp", "tg": "LUXURY LENS", "n": "Milky Brown", "sp": "DIA 14.2mm", "pr": "300.000đ / cặp"}, {"id": "kinh-ap-trong-milky-gray", "c": "mau", "img": "images/san-pham/50d648c7b513.webp", "tg": "LUXURY LENS", "n": "Milky Gray", "sp": "DIA 14.2mm", "pr": "300.000đ / cặp"}, {"id": "kinh-ap-trong-g101-choco", "c": "mau", "img": "images/san-pham/d6cbf981685d.webp", "tg": "LUXURY LENS", "n": "G101 Choco", "sp": "DIA 14.0mm", "pr": "300.000đ / cặp"}, {"id": "kinh-ap-trong-elsa-brown", "c": "mau", "img": "images/san-pham/cb3b468bc5a4.webp", "tg": "DELUXE LENS", "n": "Elsa Brown", "sp": "DIA 14.0mm", "pr": "350.000đ / cặp"}, {"id": "kinh-ap-trong-elsa-gray", "c": "mau", "img": "images/san-pham/f556fcf50bf0.webp", "tg": "DELUXE LENS", "n": "Elsa Gray", "sp": "DIA 14.0mm", "pr": "350.000đ / cặp"}, {"id": "kinh-ap-trong-luna-gray", "c": "mau", "img": "images/san-pham/d06087b43775.webp", "tg": "DELUXE LENS", "n": "Luna Gray", "sp": "DIA 14.2mm", "pr": "350.000đ / cặp"}, {"id": "kinh-ap-trong-mimo-gray", "c": "mau", "img": "images/san-pham/6770c2b3ed9f.webp", "tg": "DELUXE LENS", "n": "Mimo Gray", "sp": "DIA 14.0mm", "pr": "350.000đ / cặp"}, {"id": "kinh-ap-trong-brown-honeydew", "c": "mau", "img": "images/san-pham/ed431d5da074.webp", "tg": "PREMIUM LENS", "n": "Brown Honeydew", "sp": "DIA 14.2mm", "pr": "350.000đ / cặp"}, {"id": "kinh-ap-trong-brown-amber", "c": "mau", "img": "images/san-pham/815ae8741f79.webp", "tg": "PREMIUM LENS", "n": "Brown Amber", "sp": "DIA 14.0mm", "pr": "350.000đ / cặp"}, {"id": "kinh-ap-trong-gray-ash-veil", "c": "mau", "img": "images/san-pham/aaf09faec9b7.webp", "tg": "PREMIUM LENS", "n": "Gray Ash Veil", "sp": "DIA 14.2mm", "pr": "350.000đ / cặp"}, {"id": "kinh-ap-trong-clear-innovation", "c": "trong", "img": "images/san-pham/6c0021ee54f1.webp", "tg": "HIGH QUALITY", "n": "Clear Innovation", "sp": "DIA 14.0mm", "pr": "190.000đ / cặp"}, {"id": "kinh-ap-trong-clear-oxy", "c": "trong", "img": "images/san-pham/e6fe700bc390.webp", "tg": "HIGH QUALITY", "n": "Clear Oxy", "sp": "DIA 14.0mm", "pr": "230.000đ / cặp"}, {"id": "kinh-ap-trong-clear-new", "c": "trong", "img": "images/san-pham/75159bdf038b.webp", "tg": "Hydrophilic (Luxury)", "n": "Clear New", "sp": "DIA 14.2mm", "pr": "300.000đ / cặp"}, {"id": "kinh-ap-trong-clear-1day", "c": "trong", "img": "images/san-pham/1c40e228beda.webp", "tg": "Soft Lens", "n": "Clear 1day", "sp": "DIA 14.0mm", "pr": "80.000đ / cặp"}, {"id": "kinh-ap-trong-clear-lens-can-loan", "c": "loan", "img": "images/san-pham/8ad00e6a56a7.webp", "tg": "Oxy Hydrogel", "n": "Clear Lens Cận Loạn", "sp": "DIA 14.2mm", "pr": "450.000đ / cặp"}, {"id": "kinh-ap-trong-elsa-can-loan", "c": "loan", "img": "images/san-pham/1ce8fd354b99.webp", "tg": "LUXURY LENS", "n": "Elsa Cận Loạn", "sp": "DIA 14.2mm", "pr": "600.000đ / cặp"}, {"id": "kinh-ap-trong-iris-lens-nau-tu-nhien", "c": "tm", "img": "", "tg": "Lens thẩm mỹ cho mắt khuyết tật", "n": "Iris Lens Nâu tự nhiên", "sp": "DIA 14.0 - 14.2mm", "pr": "1.000.000đ / chiếc"}, {"id": "kinh-ap-trong-iris-lens-nau-den", "c": "tm", "img": "", "tg": "Lens thẩm mỹ cho mắt khuyết tật", "n": "Iris Lens Nâu đen", "sp": "DIA 14.0 - 14.2mm", "pr": "1.000.000đ / chiếc"}, {"id": "kinh-ap-trong-iris-lens-nau-sang", "c": "tm", "img": "", "tg": "Lens thẩm mỹ cho mắt khuyết tật", "n": "Iris Lens Nâu sáng", "sp": "DIA 14.0 - 14.2mm", "pr": "1.000.000đ / chiếc"}, {"id": "nuoc-ngam-lens-qeye-care-140ml", "c": "ngam", "img": "images/san-pham/833b88500a48.webp", "tg": "Nước ngâm, nhỏ mắt", "n": "Qeye Care 140ml", "sp": "140ml", "pr": "70.000đ / chai"}, {"id": "nuoc-ngam-lens-qeye-care-360ml", "c": "ngam", "img": "images/san-pham/d0fa825bfedd.webp", "tg": "Nước ngâm, nhỏ mắt", "n": "Qeye Care 360ml", "sp": "360ml", "pr": "120.000đ / chai"}, {"id": "nuoc-ngam-lens-x2-360ml", "c": "ngam", "img": "images/san-pham/0a0f3788c40a.webp", "tg": "Nước ngâm, nhỏ mắt", "n": "X2 360ml", "sp": "360ml", "pr": "150.000đ / chai"}, {"id": "nho-mat-qeye-care-15ml", "c": "ngam", "img": "images/san-pham/c2c477d11211.webp", "tg": "Nước ngâm, nhỏ mắt", "n": "Nhỏ mắt Qeye Care", "sp": "15ml", "pr": "70.000đ / chai"}, {"id": "hop-nho-3-mon", "c": "phukien", "img": "images/san-pham/efc14b216489.webp", "tg": "Hộp và phụ kiện", "n": "Hộp nhỏ 3 món", "sp": "Hộp và phụ kiện", "pr": "30.000đ / cái"}, {"id": "coc-rua-lens", "c": "phukien", "img": "images/san-pham/9e78cf6380ae.webp", "tg": "Hộp và phụ kiện", "n": "Cốc rửa lens", "sp": "Hộp và phụ kiện", "pr": "40.000đ / cái"}, {"id": "nhip-gap-lens", "c": "phukien", "img": "images/san-pham/2a71630b2a66.webp", "tg": "Hộp và phụ kiện", "n": "Nhíp gắp lens", "sp": "Hộp và phụ kiện", "pr": "20.000đ / cái"}, {"id": "may-rua-lens-pin", "c": "phukien", "img": "images/san-pham/90682fb98c1c.webp", "tg": "Hộp và phụ kiện", "n": "Máy rửa lens pin", "sp": "Hộp và phụ kiện", "pr": "160.000đ / cái"}, {"id": "may-rua-lens-sac", "c": "phukien", "img": "images/san-pham/5f7a38752690.webp", "tg": "Hộp và phụ kiện", "n": "Máy rửa lens sạc", "sp": "Hộp và phụ kiện", "pr": "250.000đ / cái"}];
+var ZALO="https://zalo.me/0906629366"; /* Zalo nhận báo giá sỉ */
 var STORES=[
  {n:"QEYE LENS HCM",a:"TP Hồ Chí Minh",d:"Giao nhanh nội thành TP Hồ Chí Minh, các tỉnh 1-2 ngày.",u:"qeye-lens-hcm.html"},
  {n:"Qeye Lens Tân Phú",a:"Tân Phú, TP Hồ Chí Minh",d:"Store khu vực Tân Phú, giao hàng nhanh trong 30 phút.",u:"qeye-lens-tan-phu.html"},
@@ -320,7 +323,7 @@ function toast(m){var t=$("#toast");t.textContent=m;t.style.display="block";clea
 /* hero */
 var sl=$("#slides"),dots=$("#dots"),cur=0;
 sl.innerHTML=SLIDES.map(function(s,i){var p=byId[s.id];var price=p?p.pr.split(" / ")[0]:"";var H=i?"h2":"h1";
- return '<div class="slide" role="group" aria-roledescription="slide" aria-label="'+(i+1)+' / '+SLIDES.length+'"><div class="w"><div><span class="kick">'+esc(s.k)+'</span><'+H+'>'+esc(s.h)+'</'+H+'><p>'+esc(s.p)+'</p><div class="acts"><button class="btn" data-buy="'+s.id+'">Mua ngay</button><a class="btn o" href="#san-pham" data-tab="'+s.c+'">Xem bộ sưu tập</a></div></div><div class="pic">'+(p&&p.img?'<img src="'+p.img+'" alt="'+esc(p.n)+'"'+(i?' loading="lazy"':'')+'>':'')+(p?'<span class="tag">'+esc(p.n)+'<b>'+esc(price)+'</b></span>':'')+'</div></div></div>'}).join("");
+ return '<div class="slide" role="group" aria-roledescription="slide" aria-label="'+(i+1)+' / '+SLIDES.length+'"><div class="w"><div><span class="kick">'+esc(s.k)+'</span><'+H+'>'+esc(s.h)+'</'+H+'><p>'+esc(s.p)+'</p><div class="acts"><button class="btn" data-buy="'+s.id+'">Mua ngay</button><a class="btn o" href="#san-pham" data-tab="'+s.c+'">Xem bộ sưu tập</a></div></div><div class="pic">'+(p&&p.img?'<img src="'+p.img+'" alt="'+esc(p.n)+'"'+(i?' loading="lazy"':'')+'>':'')+(p?'<span class="tag">'+esc(p.n)+'<b>Sỉ / SL</b></span>':'')+'</div></div></div>'}).join("");
 dots.innerHTML=SLIDES.map(function(s,i){return '<button aria-label="Banner '+(i+1)+'"></button>'}).join("");
 function go(i){cur=(i+SLIDES.length)%SLIDES.length;sl.style.transform="translateX(-"+cur*100+"%)";[].forEach.call(dots.children,function(d,k){d.classList.toggle("on",k===cur)})}
 [].forEach.call(dots.children,function(d,k){d.onclick=function(){go(k);rs()}});
@@ -339,14 +342,14 @@ var tab="mau",shown=8;
 $("#tabs").innerHTML=CATS.map(function(c){return '<button role="tab" data-t="'+c[0]+'">'+esc(c[1])+'</button>'}).join("");
 function render(){var L=P.filter(function(p){return p.c===tab});
  [].forEach.call($("#tabs").children,function(b){var on=b.dataset.t===tab;b.classList.toggle("on",on);b.setAttribute("aria-selected",on)});
- $("#grid").innerHTML=L.slice(0,shown).map(function(p){var pr=p.pr.split(" / ");return '<article class="card"><div class="im">'+img(p)+'</div><div class="bd"><span class="tg">'+esc(p.tg)+'</span><h3>'+esc(p.n)+'</h3><span class="sp">'+esc(p.sp)+'</span><span class="pr">'+esc(pr[0])+(pr[1]?' <small>/ '+esc(pr[1])+'</small>':'')+'</span><button class="btn" data-buy="'+p.id+'">Mua ngay</button></div></article>'}).join("");
+ $("#grid").innerHTML=L.slice(0,shown).map(function(p){var pr=p.pr.split(" / ");return '<article class="card"><div class="im">'+img(p)+'</div><div class="bd"><span class="tg">'+esc(p.tg)+'</span><h3>'+esc(p.n)+'</h3><span class="sp">'+esc(p.sp)+'</span><span class="pr"><span>Sỉ / SL</span><a class="zl" href="'+ZALO+'" target="_blank" rel="noopener" aria-label="Hỏi giá sỉ '+esc(p.n)+' qua Zalo" title="Hỏi giá sỉ qua Zalo">Zalo</a></span></div></article>'}).join("");
  var m=$("#moreBtn");m.hidden=L.length<=shown;m.textContent="Xem thêm "+(L.length-shown)+" sản phẩm"}
 $("#tabs").addEventListener("click",function(e){var b=e.target.closest("button");if(b){tab=b.dataset.t;shown=8;render()}});
 $("#moreBtn").onclick=function(){shown+=8;render()};
 render();
 
 /* stores */
-$("#stores").innerHTML=STORES.map(function(s){return '<div class="store"><span class="pin">⌖</span><h3>'+esc(s.n)+'</h3><p><strong>'+esc(s.a)+'</strong></p><p>'+esc(s.d)+'</p><a class="btn sea" href="'+s.u+'">Đặt hàng tại đây</a></div>'}).join("");
+$("#stores").innerHTML=STORES.map(function(s){return '<li class="store"><span class="pin" aria-hidden="true">⌖</span><div class="tx"><h3>'+esc(s.n)+'</h3><p><strong>'+esc(s.a)+'</strong> · '+esc(s.d)+'</p></div><a class="go" href="'+s.u+'">Xem cửa hàng →</a></li>'}).join("");
 
 /* buy modal */
 var md=$("#buy");
