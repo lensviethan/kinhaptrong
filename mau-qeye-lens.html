@@ -337,7 +337,7 @@ function toast(m){var t=$("#toast");t.textContent=m;t.style.display="block";clea
 /* hero */
 var sl=$("#slides"),dots=$("#dots"),cur=0;
 sl.innerHTML=SLIDES.map(function(s,i){var p=byId[s.id];var price=p?p.pr.split(" / ")[0]:"";var H=i?"h2":"h1";
- return '<div class="slide" role="group" aria-roledescription="slide" aria-label="'+(i+1)+' / '+SLIDES.length+'"><div class="w"><div><span class="kick">'+esc(s.k)+'</span><'+H+'>'+esc(s.h)+'</'+H+'><p>'+esc(s.p)+'</p><div class="acts"><button class="btn" data-buy="'+s.id+'">Mua ngay</button><a class="btn o" href="#san-pham" data-tab="'+s.c+'">Xem bộ sưu tập</a></div></div><div class="pic">'+(p&&p.img?'<img src="'+p.img+'" alt="'+esc(p.n)+'"'+(i?' loading="lazy"':'')+'>':'')+(p?'<span class="tag">'+esc(p.n)+'<b>Sỉ / SL</b></span>':'')+'</div></div></div>'}).join("");
+ return '<div class="slide" role="group" aria-roledescription="slide" aria-label="'+(i+1)+' / '+SLIDES.length+'"><div class="w"><div><span class="kick">'+esc(s.k)+'</span><'+H+'>'+esc(s.h)+'</'+H+'><p>'+esc(s.p)+'</p><div class="acts"><button class="btn" data-buy="'+s.id+'">Mua ngay</button><a class="btn o" href="#san-pham" data-tab="'+s.c+'">Xem bộ sưu tập</a></div></div><div class="pic">'+(p&&p.img?'<img src="'+p.img+'" alt="'+esc(p.n)+'"'+(i?' loading="lazy"':'')+'>':'')+'</div></div></div>'}).join("");
 dots.innerHTML=SLIDES.map(function(s,i){return '<button aria-label="Banner '+(i+1)+'"></button>'}).join("");
 function go(i){cur=(i+SLIDES.length)%SLIDES.length;sl.style.transform="translateX(-"+cur*100+"%)";[].forEach.call(dots.children,function(d,k){d.classList.toggle("on",k===cur)})}
 [].forEach.call(dots.children,function(d,k){d.onclick=function(){go(k);rs()}});
