@@ -151,8 +151,14 @@ summary{cursor:pointer;padding:16px 18px;font-weight:700;list-style:none;display
 summary::-webkit-details-marker{display:none}summary::after{content:"+";color:var(--coral);font-size:22px;line-height:1}
 details[open] summary::after{content:"–"}
 details>div{padding:0 18px 16px;color:#33475a}details p{margin:0 0 8px}
-.fb{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:12px;display:flex;justify-content:center}
-.fb iframe{border:0;width:100%;max-width:340px;height:500px}
+.ads{border:2px solid var(--sea);border-radius:20px;background:#fff;padding:14px}
+.ads-h{display:flex;flex-direction:column;margin:2px 4px 12px}.ads-h span{color:var(--coral);font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase}.ads-h b{font-size:18px}
+.ads-g{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ads-g a{position:relative;display:block;aspect-ratio:1;border-radius:14px;overflow:hidden;background:var(--mist);text-decoration:none}
+.ads-g a:first-child{grid-column:1/-1;aspect-ratio:2/1.1}
+.ads-g img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.ads-g a:hover img{transform:scale(1.05)}
+.ads-g span{position:absolute;left:0;right:0;bottom:0;padding:24px 10px 9px;background:linear-gradient(transparent,rgba(0,0,0,.72));color:#fff;font-weight:700;font-size:14px;line-height:1.25;text-align:center}
 @media(max-width:860px){.kb{grid-template-columns:1fr}}
 
 /* footer */
@@ -275,7 +281,7 @@ footer .logo span{color:#fff}footer .logo small{color:#c9d6de}
     <details><summary>Đeo lens bao lâu thì an toàn?</summary><div><p>Hãy tuân theo thời gian sử dụng của từng dòng: lens 1 ngày dùng một lần rồi bỏ, lens 1 tháng, 3 tháng, 6 tháng hoặc 12 tháng tính từ ngày mở hộp. Không ngủ khi còn đeo lens, cho mắt nghỉ nếu thấy khô hoặc mỏi, và tháo lens ngay khi mắt đỏ, đau hoặc nhìn mờ bất thường. Nếu các dấu hiệu không hết, hãy đi khám mắt.</p></div></details>
     <details><summary>Cách ngâm và bảo quản lens đúng cách</summary><div><p>Rửa sạch tay trước khi chạm vào lens. Dùng nước ngâm lens chuyên dụng, không dùng nước máy hay nước tự pha. Sau khi tháo, rửa nhẹ lens rồi cho vào hộp với nước ngâm mới, thay nước mỗi ngày và giữ hộp luôn sạch, khô. Nên thay hộp đựng định kỳ.</p><p><a href="#san-pham" data-tab="ngam" style="color:var(--coral);font-weight:600">Xem nước ngâm và phụ kiện →</a></p></div></details>
   </div>
-  <div class="fb"><iframe title="Fanpage Qeye Lens" loading="lazy" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FQeyeLensVN&amp;tabs=timeline&amp;width=340&amp;height=500&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true" allow="encrypted-media"></iframe></div>
+  <aside class="ads" aria-label="Ưu đãi liên kết"><div class="ads-h"><span>Ưu đãi liên kết</span><b>Dịch vụ mắt kính 0đ</b></div><div class="ads-g"><a href="https://eyemedi.vn" target="_blank" rel="noopener"><img src="images/san-pham/4ae8133557cd.webp" alt="Mua tròng tặng gọng 0đ - EYEMEDI" loading="lazy" decoding="async"><span>Mua tròng tặng gọng 0đ</span></a><a href="https://eyemedi.vn" target="_blank" rel="noopener"><img src="images/san-pham/12648094e0d7.webp" alt="Thay đệm mũi mắt kính 0đ - EYEMEDI" loading="lazy" decoding="async"><span>Thay đệm mũi mắt kính 0đ</span></a><a href="https://eyemedi.vn" target="_blank" rel="noopener"><img src="images/san-pham/a174d4480017.webp" alt="Xiết ốc chỉnh gọng 0đ - EYEMEDI" loading="lazy" decoding="async"><span>Xiết ốc chỉnh gọng 0đ</span></a><a href="https://eyemedi.vn" target="_blank" rel="noopener"><img src="images/san-pham/64507315a159.webp" alt="Thay đuôi càng kính 0đ - EYEMEDI" loading="lazy" decoding="async"><span>Thay đuôi càng kính 0đ</span></a><a href="https://eyemedi.vn" target="_blank" rel="noopener"><img src="images/san-pham/7b7885539a27.webp" alt="Thay tròng kính cận 0đ - EYEMEDI" loading="lazy" decoding="async"><span>Thay tròng kính cận 0đ</span></a></div></aside>
 </div></section>
 </main>
 
