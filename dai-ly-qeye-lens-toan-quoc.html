@@ -59,6 +59,16 @@ header.hd .w{display:flex;align-items:center;justify-content:space-between;gap:1
 footer{background:var(--ink);color:#c9d6de;padding:28px 0;font-size:14px}footer a{color:#fff}
 footer .w{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .float{position:fixed;right:16px;bottom:16px;z-index:30;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#00b2ff,#a033ff);box-shadow:0 10px 26px rgba(16,36,58,.25)}
+.ads{margin-top:0;border:2px solid var(--sea);border-radius:20px;background:#fff;padding:14px 0;overflow:hidden}
+.ads-tr{display:flex;transition:transform .6s ease}
+.ads-it{flex:0 0 25%;padding:0 7px}
+.ads-it a{position:relative;display:block;aspect-ratio:1;border-radius:14px;overflow:hidden;background:var(--mist);text-decoration:none}
+.ads-it img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.ads-it a:hover img{transform:scale(1.05)}
+.ads-it span{position:absolute;left:0;right:0;bottom:0;padding:24px 8px 9px;background:linear-gradient(transparent,rgba(0,0,0,.72));color:#fff;font-weight:700;font-size:14px;line-height:1.25;text-align:center}
+.ads{padding-left:7px;padding-right:7px}
+@media(max-width:600px){.ads-it{flex-basis:50%}}
+.ads{margin:18px 0 26px}
 :focus-visible{outline:3px solid var(--coral);outline-offset:2px}
 </style>
 </head>
@@ -75,6 +85,7 @@ footer .w{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <div class="meta">Cập nhật: 08/11/2026 · 64 đại lý</div>
     <p>Danh sách đại lý bán lẻ kính áp tròng Qeye Lens chính hãng tại TP Hồ Chí Minh và các tỉnh thành. Chọn khu vực gần bạn để xem sản phẩm, chọn độ và đặt hàng online. Địa chỉ cụ thể của từng đại lý đang được cập nhật dần.</p>
   </article>
+  <div class="ads" aria-label="Ưu đãi liên kết" aria-roledescription="carousel"><div class="ads-tr" id="adsTr"><div class="ads-it"><a href="https://eyemedi.vn" target="_blank" rel="noopener"><img src="images/san-pham/4ae8133557cd.webp" alt="Mua tròng tặng gọng 0đ - EYEMEDI" loading="lazy" decoding="async"><span>Mua tròng tặng gọng 0đ</span></a></div><div class="ads-it"><a href="https://eyemedi.vn" target="_blank" rel="noopener"><img src="images/san-pham/12648094e0d7.webp" alt="Thay đệm mũi mắt kính 0đ - EYEMEDI" loading="lazy" decoding="async"><span>Thay đệm mũi mắt kính 0đ</span></a></div><div class="ads-it"><a href="https://eyemedi.vn" target="_blank" rel="noopener"><img src="images/san-pham/a174d4480017.webp" alt="Xiết ốc chỉnh gọng 0đ - EYEMEDI" loading="lazy" decoding="async"><span>Xiết ốc chỉnh gọng 0đ</span></a></div><div class="ads-it"><a href="https://eyemedi.vn" target="_blank" rel="noopener"><img src="images/san-pham/64507315a159.webp" alt="Thay đuôi càng kính 0đ - EYEMEDI" loading="lazy" decoding="async"><span>Thay đuôi càng kính 0đ</span></a></div><div class="ads-it"><a href="https://eyemedi.vn" target="_blank" rel="noopener"><img src="images/san-pham/7b7885539a27.webp" alt="Thay tròng kính cận 0đ - EYEMEDI" loading="lazy" decoding="async"><span>Thay tròng kính cận 0đ</span></a></div></div></div>
 </div>
 <div class="tools"><div class="w">
   <label class="search"><span class="sr" style="position:absolute;left:-9999px">Tìm đại lý</span><input id="q" type="search" placeholder="Tìm quận, tỉnh thành…" autocomplete="off"></label>
@@ -96,6 +107,9 @@ items.forEach(function(li){li._q=n(li.dataset.q)});
 q.addEventListener("input",function(){var v=n(q.value.trim()),any=false;items.forEach(function(li){var ok=!v||li._q.indexOf(v)>=0;li.hidden=!ok;if(ok)any=true});
 rgs.forEach(function(r){r.hidden=!r.querySelector(".dl:not([hidden])")});em.style.display=any?"none":"block"});
 document.getElementById("yr").textContent=new Date().getFullYear();
+(function(){var tr=document.getElementById("adsTr");if(!tr)return;var n=tr.children.length,i=0,box=tr.parentNode;function v(){return innerWidth<=600?2:4}
+function go(){if(i>n-v())i=0;tr.style.transform="translateX(-"+(i*100/v())+"%)"}
+var h=setInterval(function(){i++;go()},3000);box.addEventListener("mouseenter",function(){clearInterval(h)});box.addEventListener("mouseleave",function(){h=setInterval(function(){i++;go()},3000)});addEventListener("resize",go)})();
 var cv=document.createElement("canvas").getContext("2d");function ink(el,t){var cs=getComputedStyle(el);cv.font=cs.fontStyle+" "+cs.fontWeight+" "+cs.fontSize+" "+cs.fontFamily;var m=cv.measureText(t),sp=parseFloat(cs.letterSpacing)||0;return{l:m.actualBoundingBoxLeft,w:m.actualBoundingBoxLeft+m.actualBoundingBoxRight+sp*(t.length-1)}}
 function fit(){var a=document.querySelector(".logo span"),b=document.querySelector(".logo small");b.style.letterSpacing="0px";b.style.fontSize="";b.style.marginLeft="0px";b.style.marginRight="0px";var A=ink(a,a.textContent),B=ink(b,b.textContent),fs=parseFloat(getComputedStyle(b).fontSize);if(B.w>A.w*.92){b.style.fontSize=(fs*A.w*.92/B.w)+"px";B=ink(b,b.textContent)}var k=b.textContent.length,ls=(A.w-B.w)/(k-1);b.style.letterSpacing=ls+"px";b.style.marginRight=(-ls)+"px";b.style.marginLeft=(B.l-A.l)+"px"}
 fit();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);addEventListener("resize",fit)})();
