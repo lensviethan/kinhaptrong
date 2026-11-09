@@ -79,3 +79,7 @@ section[id],[id^="cat-"],.rg{scroll-margin-top:100px}
 .qs-top,.qs-hd,.qs-ft,.qs-sub{width:100%;align-self:stretch}
 body>a>img{max-width:100%;height:auto}
 #pm{z-index:1100!important}#co{z-index:1101!important}
+/* căn đều hai bên nội dung bài viết */
+:where(p:not(.qs p),li:not(.qs li)){text-align:justify}
+.section-heading p,.cta-banner p,.cta p,p.imgnote,p.bh-cta,p.empty,p.form-notice{text-align:center}
+.toc li,li:has(>a:only-child){text-align:left}
