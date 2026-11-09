@@ -78,3 +78,4 @@ section[id],[id^="cat-"],.rg{scroll-margin-top:100px}
 .eyemedi-menu,.floating-contact{display:none!important}
 .qs-top,.qs-hd,.qs-ft,.qs-sub{width:100%;align-self:stretch}
 body>a>img{max-width:100%;height:auto}
+#pm{z-index:1100!important}#co{z-index:1101!important}
