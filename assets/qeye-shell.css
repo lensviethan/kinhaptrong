@@ -83,3 +83,11 @@ body>a>img{max-width:100%;height:auto}
 :where(p:not(.qs p),li:not(.qs li)){text-align:justify}
 .section-heading p,.cta-banner p,.cta p,p.imgnote,p.bh-cta,p.empty,p.form-notice{text-align:center}
 .toc li,li:has(>a:only-child){text-align:left}
+/* khung chi tiết sản phẩm: ảnh rộng bằng nội dung, ảnh nhỏ căn trái + giá căn phải luôn cùng 1 hàng */
+.dm .pd>div:first-child{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;column-gap:10px}
+.dm .pd>div:first-child>.ph{grid-column:1/-1;max-width:none;width:100%;margin:0}
+.dm .pd>div:first-child>.ths{grid-column:1;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;min-width:0;margin-top:10px;scrollbar-width:none}
+.dm .pd>div:first-child>.ths::-webkit-scrollbar{display:none}
+.dm .pd>div:first-child .th{flex:none;width:clamp(40px,11vw,56px);height:clamp(40px,11vw,56px)}
+.dm .pd>div:first-child>.price{grid-column:2;text-align:right;white-space:nowrap;margin:10px 0 0;font-size:clamp(18px,5.6vw,28px);line-height:1.1}
+.dm .pd>div:first-child>.price small{font-size:.55em!important}
