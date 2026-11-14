@@ -129,9 +129,25 @@ console.log(JSON.stringify(o));await b.close()})();"""
     open('index.html', 'w', encoding='utf-8').write(s)
 
 def sitemap():
-    s = open('sitemap.xml').read()
-    s = re.sub(r'<lastmod>[^<]*</lastmod>', '<lastmod>%s</lastmod>' % TODAY, s)
-    open('sitemap.xml', 'w').write(s)
+    """lastmod = ngày (giờ VN) file được sửa gần nhất: lần commit cuối, hoặc hôm nay nếu đang có thay đổi chưa commit."""
+    today = time.strftime('%Y-%m-%d', time.gmtime(time.time() + 7 * 3600))
+    dirty = set(subprocess.run(['git', 'status', '--porcelain'], capture_output=True, text=True).stdout.split())
+
+    def mod(f):
+        if not os.path.exists(f):
+            return None
+        if f in dirty:
+            return today
+        d = subprocess.run(['git', 'log', '-1', '--format=%ct', '--', f], capture_output=True, text=True).stdout.strip()
+        return time.strftime('%Y-%m-%d', time.gmtime(int(d) + 7 * 3600)) if d else today
+
+    def rep(m):
+        path = m.group(1)
+        f = 'index.html' if path == '' else (path if path.endswith('.html') else path + '.html')
+        return m.group(0) if not mod(f) else re.sub(r'<lastmod>[^<]*</lastmod>', '<lastmod>%s</lastmod>' % mod(f), m.group(0))
+    s = open('sitemap.xml', encoding='utf-8').read()
+    s = re.sub(r'<url>\s*<loc>' + re.escape(BASE) + r'([^<]*)</loc>.*?</url>', rep, s, flags=re.S)
+    open('sitemap.xml', 'w', encoding='utf-8').write(s)
 
 def shorten():
     """Trang cửa hàng qeyelens-*: đường dẫn ngắn không đuôi .html (GitHub Pages tự phục vụ file .html)."""
