@@ -1,0 +1,290 @@
+[
+{
+"name": "Mắt kính Điện Biên Phủ 343 Bình Thạnh",
+"short": "Bình Thạnh",
+"full": "Quận Bình Thạnh, TP Hồ Chí Minh",
+"addr": "343 Nguyễn Xí, Phường 13, Quận Bình Thạnh, TP Hồ Chí Minh",
+"group": "hcm",
+"slug": "qeye-lens-343-binh-thanh"
+},
+{
+"name": "Mắt kính Số 1 Việt Nam Thủ Đức",
+"short": "Thủ Đức",
+"full": "TP Thủ Đức, TP Hồ Chí Minh",
+"addr": "4/32 Hoàng Diệu 2, Phường Linh Chiểu, TP Thủ Đức, TP Hồ Chí Minh",
+"group": "hcm",
+"slug": "qeye-lens-so-1-thu-duc"
+},
+{
+"name": "Mắt kính Sài Gòn Quận 9",
+"short": "Quận 9",
+"full": "Quận 9 (TP Thủ Đức), TP Hồ Chí Minh",
+"addr": "2B Đại lộ 2, Phường Phước Bình, TP Thủ Đức (Quận 9 cũ), TP Hồ Chí Minh",
+"group": "hcm",
+"slug": "qeye-lens-sai-gon-quan-9"
+},
+{
+"name": "Mắt kính Sài Gòn New Quận 2",
+"short": "Quận 2",
+"full": "Quận 2 (TP Thủ Đức), TP Hồ Chí Minh",
+"addr": "543 Nguyễn Duy Trinh, Phường Bình Trưng Đông, TP Thủ Đức (Quận 2 cũ), TP Hồ Chí Minh",
+"group": "hcm",
+"slug": "qeye-lens-sai-gon-new-quan-2"
+},
+{
+"name": "Mắt kính Tân Ánh Ngọc Phú Nhuận",
+"short": "Phú Nhuận",
+"full": "Quận Phú Nhuận, TP Hồ Chí Minh",
+"addr": "279B Phan Đình Phùng, Phường 15, Quận Phú Nhuận, TP Hồ Chí Minh",
+"group": "hcm",
+"slug": "qeye-lens-tan-anh-ngoc-phu-nhuan"
+},
+{
+"name": "Mắt kính Hoàng Hà Tân Bình",
+"short": "Tân Bình",
+"full": "Quận Tân Bình, TP Hồ Chí Minh",
+"addr": "141A Đồng Đen, Phường 11, Quận Tân Bình, TP Hồ Chí Minh",
+"group": "hcm",
+"slug": "qeye-lens-hoang-ha-tan-binh"
+},
+{
+"name": "Mắt kính Tin Tân Phú",
+"short": "Tân Phú",
+"full": "Quận Tân Phú, TP Hồ Chí Minh",
+"addr": "176 Lê Trọng Tấn, Phường Tây Thạnh, Quận Tân Phú, TP Hồ Chí Minh",
+"group": "hcm",
+"slug": "qeye-lens-tin-tan-phu"
+},
+{
+"name": "Hoàng Hà Optical Gò Vấp",
+"short": "Gò Vấp",
+"full": "Quận Gò Vấp, TP Hồ Chí Minh",
+"addr": "573 Quang Trung, Phường 11, Quận Gò Vấp, TP Hồ Chí Minh",
+"group": "hcm",
+"slug": "qeye-lens-hoang-ha-go-vap"
+},
+{
+"name": "Mắt kính Tầm Mắt Quận 4",
+"short": "Quận 4",
+"full": "Quận 4, TP Hồ Chí Minh",
+"addr": "96A Nguyễn Tất Thành, Phường 12, Quận 4, TP Hồ Chí Minh",
+"group": "hcm",
+"slug": "qeye-lens-tam-mat-quan-4"
+},
+{
+"name": "Lens mắt Quận 5",
+"short": "Quận 5",
+"full": "Quận 5, TP Hồ Chí Minh",
+"addr": "116 Trần Hưng Đạo, Phường An Đông, Quận 5, TP Hồ Chí Minh",
+"group": "hcm",
+"slug": "qeye-lens-tran-hung-dao-quan-5"
+},
+{
+"name": "Mắt kính Công Ty Quận 6",
+"short": "Quận 6",
+"full": "Quận 6, TP Hồ Chí Minh",
+"addr": "87 Bà Hom, Phường 13, Quận 6, TP Hồ Chí Minh",
+"group": "hcm",
+"slug": "qeye-lens-cong-ty-quan-6"
+},
+{
+"name": "Mắt kính Sài Gòn Quận 7",
+"short": "Quận 7",
+"full": "Quận 7, TP Hồ Chí Minh",
+"addr": "475 Huỳnh Tấn Phát, Phường Tân Thuận Đông, Quận 7, TP Hồ Chí Minh",
+"group": "hcm",
+"slug": "qeye-lens-sai-gon-quan-7"
+},
+{
+"name": "Lens mắt Quận 8",
+"short": "Quận 8",
+"full": "Quận 8, TP Hồ Chí Minh",
+"addr": "147 Liên Tỉnh, Quận 8, TP Hồ Chí Minh",
+"group": "hcm",
+"slug": "qeye-lens-lien-tinh-quan-8"
+},
+{
+"name": "Mắt kính Hoàng Hà Quận 10",
+"short": "Quận 10",
+"full": "Quận 10, TP Hồ Chí Minh",
+"addr": "151 Lý Thái Tổ, Phường 9, Quận 10, TP Hồ Chí Minh",
+"group": "hcm",
+"slug": "qeye-lens-hoang-ha-quan-10"
+},
+{
+"name": "Mắt kính Hoàng Hà Quận 11",
+"short": "Quận 11",
+"full": "Quận 11, TP Hồ Chí Minh",
+"addr": "219 Lý Thường Kiệt, Phường 7, Quận 11, TP Hồ Chí Minh",
+"group": "hcm",
+"slug": "qeye-lens-hoang-ha-quan-11"
+},
+{
+"name": "Mắt kính Điện Biên Phủ 1 Quận 12",
+"short": "Quận 12",
+"full": "Quận 12, TP Hồ Chí Minh",
+"addr": "81 Phan Văn Hớn, Khu phố 4, Phường Tân Thới Nhất, Quận 12, TP Hồ Chí Minh",
+"group": "hcm",
+"slug": "qeye-lens-dien-bien-phu-quan-12"
+},
+{
+"name": "Mắt kính Bình Chánh Tân Túc",
+"short": "Bình Chánh",
+"full": "Huyện Bình Chánh, TP Hồ Chí Minh",
+"addr": "E9/17 Khu phố 5, Thị trấn Tân Túc, Huyện Bình Chánh, TP Hồ Chí Minh",
+"group": "hcm",
+"slug": "qeye-lens-tan-tuc-binh-chanh"
+},
+{
+"name": "Mắt kính BV Điện Biên Phủ Dĩ An",
+"short": "Dĩ An",
+"full": "TP Dĩ An, Bình Dương",
+"addr": "117/1A Khu phố Đông Các, Phường Tân Đông Hiệp, TP Dĩ An, Bình Dương",
+"group": "vn",
+"slug": "qeye-lens-di-an"
+},
+{
+"name": "Mắt kính BV Điện Biên Phủ Bến Cát",
+"short": "Bến Cát",
+"full": "TP Bến Cát, Bình Dương",
+"addr": "67/3 Quốc lộ 13, Khu phố 1, Phường Tân Định, TP Bến Cát, Bình Dương",
+"group": "vn",
+"slug": "qeye-lens-ben-cat"
+},
+{
+"name": "Mắt kính Nguồn Sáng Biên Hòa",
+"short": "Biên Hòa",
+"full": "TP Biên Hòa, Đồng Nai",
+"addr": "656 Quốc lộ 1A, Phường Tân Biên, TP Biên Hòa, Đồng Nai",
+"group": "vn",
+"slug": "qeye-lens-nguon-sang-bien-hoa"
+},
+{
+"name": "Lens mắt Cần Giuộc",
+"short": "Cần Giuộc",
+"full": "Huyện Cần Giuộc, Long An",
+"addr": "Số 2 Nguyễn Thái Bình, Thị trấn Cần Giuộc, Huyện Cần Giuộc, Long An",
+"group": "vn",
+"slug": "qeye-lens-can-giuoc"
+},
+{
+"name": "Mắt kính Điện Biên Phủ Mỹ Tho",
+"short": "Mỹ Tho",
+"full": "TP Mỹ Tho, Tiền Giang",
+"addr": "Số 8 Lý Thường Kiệt, Phường 4, TP Mỹ Tho, Tiền Giang",
+"group": "vn",
+"slug": "qeye-lens-dien-bien-phu-my-tho"
+},
+{
+"name": "Mắt kính An Gò Công",
+"short": "Gò Công",
+"full": "TX Gò Công, Tiền Giang",
+"addr": "19B Nguyễn Huệ, Khu phố 1, Phường 2, Gò Công, Tiền Giang",
+"group": "vn",
+"slug": "qeye-lens-an-go-cong"
+},
+{
+"name": "Mắt kính Điện Biên Phủ Bến Tre",
+"short": "Bến Tre",
+"full": "TP Bến Tre, Bến Tre",
+"addr": "159 Khu phố 3, Phường Phú Tân, TP Bến Tre, Bến Tre",
+"group": "vn",
+"slug": "qeye-lens-dien-bien-phu-ben-tre"
+},
+{
+"name": "Mắt kính Điện Biên Phủ Cao Lãnh",
+"short": "Cao Lãnh",
+"full": "TP Cao Lãnh, Đồng Tháp",
+"addr": "88 Nguyễn Huệ, Phường 1, TP Cao Lãnh, Đồng Tháp",
+"group": "vn",
+"slug": "qeye-lens-dien-bien-phu-cao-lanh"
+},
+{
+"name": "Lens mắt Sa Đéc",
+"short": "Sa Đéc",
+"full": "TP Sa Đéc, Đồng Tháp",
+"addr": "207 Nguyễn Sinh Sắc, TP Sa Đéc, Đồng Tháp",
+"group": "vn",
+"slug": "qeye-lens-sa-dec"
+},
+{
+"name": "Lens mắt Mỹ Phước Đồng Tháp",
+"short": "Mỹ Phước",
+"full": "Phường Mỹ Phước, Đồng Tháp",
+"addr": "158 đường 30/4, Phường Mỹ Phước, Đồng Tháp",
+"group": "vn",
+"slug": "qeye-lens-my-phuoc-dong-thap"
+},
+{
+"name": "Mắt kính BV Điện Biên Phủ Vĩnh Long",
+"short": "Vĩnh Long",
+"full": "TP Vĩnh Long, Vĩnh Long",
+"addr": "71 Phó Cơ Điều, Phường 3, TP Vĩnh Long, Vĩnh Long",
+"group": "vn",
+"slug": "qeye-lens-dien-bien-phu-vinh-long"
+},
+{
+"name": "Lens mắt Trà Vinh",
+"short": "Trà Vinh",
+"full": "TP Trà Vinh, Trà Vinh",
+"addr": "151 Lê Lợi, Phường 3, TP Trà Vinh, Trà Vinh",
+"group": "vn",
+"slug": "qeye-lens-le-loi-tra-vinh"
+},
+{
+"name": "Hoàng Hà Optical Ninh Kiều",
+"short": "Ninh Kiều",
+"full": "Quận Ninh Kiều, Cần Thơ",
+"addr": "68-70 Nguyễn Việt Hồng, Phường An Phú, Quận Ninh Kiều, Cần Thơ",
+"group": "vn",
+"slug": "qeye-lens-hoang-ha-ninh-kieu"
+},
+{
+"name": "Lens mắt Cái Răng",
+"short": "Cái Răng",
+"full": "Quận Cái Răng, Cần Thơ",
+"addr": "74/1 Trần Hưng Đạo, Quận Cái Răng, Cần Thơ",
+"group": "vn",
+"slug": "qeye-lens-cai-rang"
+},
+{
+"name": "Mắt kính Sao Việt Bình Thủy",
+"short": "Bình Thủy",
+"full": "Quận Bình Thủy, Cần Thơ",
+"addr": "196A Trần Quang Diệu, Phường Thới An, Quận Bình Thủy, Cần Thơ",
+"group": "vn",
+"slug": "qeye-lens-sao-viet-binh-thuy"
+},
+{
+"name": "Lens mắt Sóc Trăng",
+"short": "Sóc Trăng",
+"full": "TP Sóc Trăng, Sóc Trăng",
+"addr": "259 Lê Hồng Phong, Phường 3, TP Sóc Trăng, Sóc Trăng",
+"group": "vn",
+"slug": "qeye-lens-le-hong-phong-soc-trang"
+},
+{
+"name": "Lens mắt Bạc Liêu",
+"short": "Bạc Liêu",
+"full": "TP Bạc Liêu, Bạc Liêu",
+"addr": "16 Trần Phú, Phường 3, TP Bạc Liêu, Bạc Liêu",
+"group": "vn",
+"slug": "qeye-lens-tran-phu-bac-lieu"
+},
+{
+"name": "Mắt kính Âu Việt Cà Mau",
+"short": "Cà Mau",
+"full": "TP Cà Mau, Cà Mau",
+"addr": "114 Lý Thường Kiệt, Khóm 6, Phường 7, TP Cà Mau, Cà Mau",
+"group": "vn",
+"slug": "qeye-lens-au-viet-ca-mau"
+},
+{
+"name": "Mắt kính BV Sài Gòn Hòn Đất",
+"short": "Hòn Đất",
+"full": "Huyện Hòn Đất, Kiên Giang",
+"addr": "Số 561 tổ 10, Khu phố Tri Tôn, Thị trấn Hòn Đất, Kiên Giang",
+"group": "vn",
+"slug": "qeye-lens-hon-dat"
+}
+]

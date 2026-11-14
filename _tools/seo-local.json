@@ -1,0 +1,378 @@
+[
+ {
+  "slug": "mua-kinh-ap-trong-quan-7",
+  "area": "Quận 7",
+  "full": "Quận 7, TP Hồ Chí Minh",
+  "region": "hcm",
+  "stores": [
+   "qeye-lens-sai-gon-quan-7"
+  ],
+  "status": "draft",
+  "date": "2026-11-14"
+ },
+ {
+  "slug": "mua-kinh-ap-trong-binh-thanh",
+  "area": "Bình Thạnh",
+  "full": "Quận Bình Thạnh, TP Hồ Chí Minh",
+  "region": "hcm",
+  "stores": [
+   "qeye-lens-343-binh-thanh"
+  ],
+  "status": "draft",
+  "date": "2026-11-14"
+ },
+ {
+  "slug": "mua-kinh-ap-trong-go-vap",
+  "area": "Gò Vấp",
+  "full": "Quận Gò Vấp, TP Hồ Chí Minh",
+  "region": "hcm",
+  "stores": [
+   "qeye-lens-hoang-ha-go-vap"
+  ],
+  "status": "draft",
+  "date": "2026-11-14"
+ },
+ {
+  "slug": "mua-kinh-ap-trong-tan-binh",
+  "area": "Tân Bình",
+  "full": "Quận Tân Bình, TP Hồ Chí Minh",
+  "region": "hcm",
+  "stores": [
+   "qeye-lens-hoang-ha-tan-binh"
+  ],
+  "status": "draft",
+  "date": "2026-11-14"
+ },
+ {
+  "slug": "mua-kinh-ap-trong-phu-nhuan",
+  "area": "Phú Nhuận",
+  "full": "Quận Phú Nhuận, TP Hồ Chí Minh",
+  "region": "hcm",
+  "stores": [
+   "qeye-lens-tan-anh-ngoc-phu-nhuan"
+  ],
+  "status": "draft",
+  "date": "2026-11-14"
+ },
+ {
+  "slug": "mua-kinh-ap-trong-quan-10",
+  "area": "Quận 10",
+  "full": "Quận 10, TP Hồ Chí Minh",
+  "region": "hcm",
+  "stores": [
+   "qeye-lens-hoang-ha-quan-10"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-thu-duc",
+  "area": "Thủ Đức",
+  "full": "TP Thủ Đức, TP Hồ Chí Minh",
+  "region": "hcm",
+  "stores": [
+   "qeye-lens-so-1-thu-duc"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-quan-3",
+  "area": "Quận 3",
+  "full": "Quận 3, TP Hồ Chí Minh",
+  "region": "hcm",
+  "stores": [
+   "luxury-lens-quan-3-hcm"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-tan-phu",
+  "area": "Tân Phú",
+  "full": "Quận Tân Phú, TP Hồ Chí Minh",
+  "region": "hcm",
+  "stores": [
+   "qeye-lens-tin-tan-phu"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-quan-12",
+  "area": "Quận 12",
+  "full": "Quận 12, TP Hồ Chí Minh",
+  "region": "hcm",
+  "stores": [
+   "qeye-lens-dien-bien-phu-quan-12"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-quan-9",
+  "area": "Quận 9",
+  "full": "Quận 9 (TP Thủ Đức), TP Hồ Chí Minh",
+  "region": "hcm",
+  "stores": [
+   "qeye-lens-sai-gon-quan-9"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-quan-2",
+  "area": "Quận 2",
+  "full": "Quận 2 (TP Thủ Đức), TP Hồ Chí Minh",
+  "region": "hcm",
+  "stores": [
+   "qeye-lens-sai-gon-new-quan-2"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-quan-4",
+  "area": "Quận 4",
+  "full": "Quận 4, TP Hồ Chí Minh",
+  "region": "hcm",
+  "stores": [
+   "qeye-lens-tam-mat-quan-4"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-quan-5",
+  "area": "Quận 5",
+  "full": "Quận 5, TP Hồ Chí Minh",
+  "region": "hcm",
+  "stores": [
+   "qeye-lens-tran-hung-dao-quan-5"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-quan-6",
+  "area": "Quận 6",
+  "full": "Quận 6, TP Hồ Chí Minh",
+  "region": "hcm",
+  "stores": [
+   "qeye-lens-cong-ty-quan-6"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-quan-8",
+  "area": "Quận 8",
+  "full": "Quận 8, TP Hồ Chí Minh",
+  "region": "hcm",
+  "stores": [
+   "qeye-lens-lien-tinh-quan-8"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-quan-11",
+  "area": "Quận 11",
+  "full": "Quận 11, TP Hồ Chí Minh",
+  "region": "hcm",
+  "stores": [
+   "qeye-lens-hoang-ha-quan-11"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-binh-chanh",
+  "area": "Bình Chánh",
+  "full": "Huyện Bình Chánh, TP Hồ Chí Minh",
+  "region": "hcm",
+  "stores": [
+   "qeye-lens-tan-tuc-binh-chanh"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-can-tho",
+  "area": "Cần Thơ",
+  "full": "TP Cần Thơ",
+  "region": "mt",
+  "stores": [
+   "qeye-lens-hoang-ha-ninh-kieu",
+   "qeye-lens-cai-rang",
+   "qeye-lens-sao-viet-binh-thuy"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-bien-hoa",
+  "area": "Biên Hòa",
+  "full": "TP Biên Hòa, Đồng Nai",
+  "region": "dn",
+  "stores": [
+   "qeye-lens-nguon-sang-bien-hoa"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-di-an",
+  "area": "Dĩ An",
+  "full": "TP Dĩ An, Bình Dương",
+  "region": "dn",
+  "stores": [
+   "qeye-lens-di-an"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-ben-cat",
+  "area": "Bến Cát",
+  "full": "TP Bến Cát, Bình Dương",
+  "region": "dn",
+  "stores": [
+   "qeye-lens-ben-cat"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-vinh-long",
+  "area": "Vĩnh Long",
+  "full": "TP Vĩnh Long, Vĩnh Long",
+  "region": "mt",
+  "stores": [
+   "qeye-lens-dien-bien-phu-vinh-long"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-my-tho",
+  "area": "Mỹ Tho",
+  "full": "TP Mỹ Tho, Tiền Giang",
+  "region": "mt",
+  "stores": [
+   "qeye-lens-dien-bien-phu-my-tho"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-ca-mau",
+  "area": "Cà Mau",
+  "full": "TP Cà Mau, Cà Mau",
+  "region": "mt",
+  "stores": [
+   "qeye-lens-au-viet-ca-mau"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-ben-tre",
+  "area": "Bến Tre",
+  "full": "TP Bến Tre, Bến Tre",
+  "region": "mt",
+  "stores": [
+   "qeye-lens-dien-bien-phu-ben-tre"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-cao-lanh",
+  "area": "Cao Lãnh",
+  "full": "TP Cao Lãnh, Đồng Tháp",
+  "region": "mt",
+  "stores": [
+   "qeye-lens-dien-bien-phu-cao-lanh"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-sa-dec",
+  "area": "Sa Đéc",
+  "full": "TP Sa Đéc, Đồng Tháp",
+  "region": "mt",
+  "stores": [
+   "qeye-lens-sa-dec"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-soc-trang",
+  "area": "Sóc Trăng",
+  "full": "TP Sóc Trăng, Sóc Trăng",
+  "region": "mt",
+  "stores": [
+   "qeye-lens-le-hong-phong-soc-trang"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-bac-lieu",
+  "area": "Bạc Liêu",
+  "full": "TP Bạc Liêu, Bạc Liêu",
+  "region": "mt",
+  "stores": [
+   "qeye-lens-tran-phu-bac-lieu"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-tra-vinh",
+  "area": "Trà Vinh",
+  "full": "TP Trà Vinh, Trà Vinh",
+  "region": "mt",
+  "stores": [
+   "qeye-lens-le-loi-tra-vinh"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-go-cong",
+  "area": "Gò Công",
+  "full": "TX Gò Công, Tiền Giang",
+  "region": "mt",
+  "stores": [
+   "qeye-lens-an-go-cong"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-can-giuoc",
+  "area": "Cần Giuộc",
+  "full": "Huyện Cần Giuộc, Long An",
+  "region": "mt",
+  "stores": [
+   "qeye-lens-can-giuoc"
+  ],
+  "status": "todo",
+  "date": null
+ },
+ {
+  "slug": "mua-kinh-ap-trong-hon-dat",
+  "area": "Hòn Đất",
+  "full": "Huyện Hòn Đất, Kiên Giang",
+  "region": "mt",
+  "stores": [
+   "qeye-lens-hon-dat"
+  ],
+  "status": "todo",
+  "date": null
+ }
+]
