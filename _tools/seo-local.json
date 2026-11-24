@@ -117,8 +117,8 @@
   "stores": [
    "qeye-lens-sai-gon-quan-9"
   ],
-  "status": "todo",
-  "date": null
+  "status": "draft",
+  "date": "2026-11-24"
  },
  {
   "slug": "mua-kinh-ap-trong-quan-2",
@@ -128,8 +128,8 @@
   "stores": [
    "qeye-lens-sai-gon-new-quan-2"
   ],
-  "status": "todo",
-  "date": null
+  "status": "draft",
+  "date": "2026-11-24"
  },
  {
   "slug": "mua-kinh-ap-trong-quan-4",
@@ -139,8 +139,8 @@
   "stores": [
    "qeye-lens-tam-mat-quan-4"
   ],
-  "status": "todo",
-  "date": null
+  "status": "draft",
+  "date": "2026-11-24"
  },
  {
   "slug": "mua-kinh-ap-trong-quan-5",
@@ -150,8 +150,8 @@
   "stores": [
    "qeye-lens-tran-hung-dao-quan-5"
   ],
-  "status": "todo",
-  "date": null
+  "status": "draft",
+  "date": "2026-11-24"
  },
  {
   "slug": "mua-kinh-ap-trong-quan-6",
@@ -161,8 +161,8 @@
   "stores": [
    "qeye-lens-cong-ty-quan-6"
   ],
-  "status": "todo",
-  "date": null
+  "status": "draft",
+  "date": "2026-11-24"
  },
  {
   "slug": "mua-kinh-ap-trong-quan-8",
